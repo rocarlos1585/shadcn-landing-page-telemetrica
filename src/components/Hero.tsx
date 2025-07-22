@@ -10,16 +10,16 @@ export const Hero = () => {
         <main className="text-5xl md:text-6xl font-bold">
           <h1 className="inline">
             <span className="inline bg-gradient-to-r from-[#F596D3]  to-[#D247BF] text-transparent bg-clip-text">
-              Shadcn
+              Telemetrica
             </span>{" "}
-            landing page
+            es tu solucion
           </h1>{" "}
-          for{" "}
+          para{" "}
           <h2 className="inline">
             <span className="inline bg-gradient-to-r from-[#61DAFB] via-[#1fc0f1] to-[#03a3d7] text-transparent bg-clip-text">
-              React
+              el rastreo de 
             </span>{" "}
-            developers
+            tus vehiculos
           </h2>
         </main>
 
