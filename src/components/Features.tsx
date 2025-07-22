@@ -6,9 +6,12 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import image from "../assets/growth.png";
-import image3 from "../assets/reflecting.png";
-import image4 from "../assets/looking-ahead.png";
+import lock from "../assets/lock.png";
+import profit from "../assets/profit.png";
+import roadmap from "../assets/roadmap.png";
+
+
+
 
 interface FeatureProps {
   title: string;
@@ -18,35 +21,32 @@ interface FeatureProps {
 
 const features: FeatureProps[] = [
   {
-    title: "Responsive Design",
+    title: "Seguridad Reforzada",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
-    image: image4,
+      "Un sistema de rastreo GPS proporciona seguridad adicional al permitirte conocer la ubicación exacta de tus unidades en tiempo real.",
+    image: lock,
   },
   {
-    title: "Intuitive user interface",
+    title: "Eficiencia operativa",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
-    image: image3,
+      "Para tu empresa, te permite optimizar rutas, programar mantenimientos preventivos, conocer estilos de manejo y reducir costos operativos al eliminar el uso no autorizado de tus vehículos.",
+    image: profit,
   },
   {
-    title: "AI-Powered insights",
+    title: "Ahorro en tiempo y dinero",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
-    image: image,
+      "Al mejorar la eficiencia en el uso de tus vehículos, un sistema de rastreo GPS te ayuda a reducir los gastos operativos y optimizar tiempo valioso.",
+    image: roadmap,
   },
 ];
 
 const featureList: string[] = [
-  "Dark/Light theme",
-  "Reviews",
-  "Features",
-  "Pricing",
-  "Contact form",
-  "Our team",
-  "Responsive design",
-  "Newsletter",
-  "Minimalist",
+  "Rastreo en tiempo real",
+  "Optimización de rutas",
+  "Atencion personalizada",
+  "Precios",
+  "Sin intermediarios",
+  "Funcionamiento 24/7",
 ];
 
 export const Features = () => {
@@ -56,9 +56,9 @@ export const Features = () => {
       className="container py-24 sm:py-32 space-y-8"
     >
       <h2 className="text-3xl lg:text-4xl font-bold md:text-center">
-        Many{" "}
+        Soluciones en telemetria{" "}
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-          Great Features
+          para todos
         </span>
       </h2>
 

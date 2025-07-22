@@ -1,7 +1,5 @@
 import { Button } from "./ui/button";
-import { buttonVariants } from "./ui/button";
 import { HeroCards } from "./HeroCards";
-import { GitHubLogoIcon } from "@radix-ui/react-icons";
 
 export const Hero = () => {
   return (
@@ -9,10 +7,10 @@ export const Hero = () => {
       <div className="text-center lg:text-start space-y-6">
         <main className="text-5xl md:text-6xl font-bold">
           <h1 className="inline">
-            <span className="inline bg-gradient-to-r from-[#F596D3]  to-[#D247BF] text-transparent bg-clip-text">
+            <span className="inline bg-gradient-to-r from-[#F596D3]  to-[red] text-transparent bg-clip-text">
               Telemetrica
             </span>{" "}
-            es tu solucion
+            es la solucion
           </h1>{" "}
           para{" "}
           <h2 className="inline">
@@ -24,14 +22,13 @@ export const Hero = () => {
         </main>
 
         <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
-          Build your React landing page effortlessly with the required sections
-          to your project.
+          Toma el control de tus rutas, el consumo de tus flotillas y la seguridad de tu patrimonio, conociendo su ubicacion los 365 dias del año
         </p>
 
         <div className="space-y-4 md:space-y-0 md:space-x-4">
-          <Button className="w-full md:w-1/3">Get Started</Button>
+          <Button className="w-full md:w-1/3">Solicita una DEMO</Button>
 
-          <a
+          {/* <a
             rel="noreferrer noopener"
             href="https://github.com/leoMirandaa/shadcn-landing-page.git"
             target="_blank"
@@ -41,7 +38,7 @@ export const Hero = () => {
           >
             Github Repository
             <GitHubLogoIcon className="ml-2 w-5 h-5" />
-          </a>
+          </a> */}
         </div>
       </div>
 

@@ -1,5 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
-import { MedalIcon, MapIcon, PlaneIcon, GiftIcon } from "../components/Icons";
+import { AlarmClockCheckIcon,  Network, RouteIcon, ShieldIcon} from "lucide-react";
+import colors from '../constants/colors';
+
 
 interface FeatureProps {
   icon: JSX.Element;
@@ -9,28 +11,28 @@ interface FeatureProps {
 
 const features: FeatureProps[] = [
   {
-    icon: <MedalIcon />,
-    title: "Accessibility",
+    icon: <ShieldIcon color={colors.primary} size="70px" />,
+    title: "Protege tu inversión",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
+      "Nuestros sistemas de rastreo GPS protegen tu inversión, ¿Preocupado por el robo de tu auto, motocicleta o la seguridad de tu flotilla? Descubre cómo podemos darte tranquilidad",
   },
   {
-    icon: <MapIcon />,
-    title: "Community",
+    icon: <RouteIcon color={colors.primary} size="70px"  />,
+    title: "Optimiza tus operaciones",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
+      "Con nuestros servicios puedes desde mejorar las rutas de entrega, monitorear los estilos de manejor hasta reducir costos, haz tu negocio mas eficiente.",
   },
   {
-    icon: <PlaneIcon />,
-    title: "Scalability",
+    icon: <Network color={colors.primary} size="70px" />,
+    title: "Mantente siempre conectado",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
+      "Ya sea que desees saber la ubicacion de tu vehiculo personal o de toda tu flotilla, en TELEMETRICA te brindamos el control total en la palma de tu mano ",
   },
   {
-    icon: <GiftIcon />,
-    title: "Gamification",
+    icon: <AlarmClockCheckIcon color={colors.primary} size="70px" />,
+    title: "Cumplimiento y tranquilidad",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
+      "Tenemos garantia de cumplimiento y tranquilidad. Nuestros sistemas de rastreo GPS facilitan el cumplimiento de tus compromisos y al mismo tiempo, te brindan la tranquilidad de saber que tus activos están seguros.",
   },
 ];
 
@@ -41,15 +43,15 @@ export const HowItWorks = () => {
       className="container text-center py-24 sm:py-32"
     >
       <h2 className="text-3xl md:text-4xl font-bold ">
-        How It{" "}
-        <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-          Works{" "}
+        En{" "}
+        <span style={{color:colors.primary}} className={`color:${colors.primary} bg-clip-text`}>
+          TELEMETRICA{" "}
         </span>
-        Step-by-Step Guide
+        nos comprometemos a
       </h2>
       <p className="md:w-3/4 mx-auto mt-4 mb-8 text-xl text-muted-foreground">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
-        dolor pariatur sit!
+        {/* Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
+        dolor pariatur sit! */}
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

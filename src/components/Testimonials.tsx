@@ -17,45 +17,45 @@ interface TestimonialProps {
 const testimonials: TestimonialProps[] = [
   {
     image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe",
-    comment: "This landing page is awesome!",
+    name: "Roberto Carlos López",
+    userName: "@rocarlos_1",
+    comment: "El mes pasado sufri el robo de mi motocicleta, pude recuperarla gracias a ustedes.",
   },
   {
     image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe1",
+    name: "Jose Galindo Arriaga",
+    userName: "@gal_joe",
     comment:
-      "Lorem ipsum dolor sit amet,empor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.",
+      "Tengo 4 vehiculos que todo el dia estan en movimiento, gracias a telemetrica pude optimizar mejor el consumo de la gasolina",
   },
 
   {
     image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe2",
+    name: "Brenda de la Torre",
+    userName: "@brendManzanita",
     comment:
-      "Lorem ipsum dolor sit amet,exercitation. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+      "telemetrica me ha ayudado muchisimo con mi tranquilidad, ya que mi padre ya esta grande y me preocupa que aun siga conduciendo",
   },
   {
     image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe3",
+    name: "Antonio Anguiano",
+    userName: "@tony_anguiano_84",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "Como padre de familia mi prioridad numero 1 son mis hijos, con el plan familiar puedo saber todo el tiempo donde esta mi familia",
   },
   {
     image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe4",
+    name: "Humberto Murillo",
+    userName: "@mur_5763",
     comment:
-      "Lorem ipsum dolor sit amet, tempor incididunt  aliqua. Ut enim ad minim veniam, quis nostrud.",
+      "Tengo un vehiculo clasico, el cual ya han intentado robarse mas de 4 veces, desque que instale mi GPS esa preocupación se ha ido",
   },
   {
     image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe5",
+    name: "Armando Perez",
+    userName: "@elComino64",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Vivo en una de las colonias mas conflictivas de la ciudad y mi vehiculo es mi patrimonio, con uno mi GPS puedo dormir tranquilo",
   },
 ];
 
@@ -66,12 +66,12 @@ export const Testimonials = () => {
       className="container py-24 sm:py-32"
     >
       <h2 className="text-3xl md:text-4xl font-bold">
-        Discover Why
+        Descubre porque
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
           {" "}
-          People Love{" "}
+          la comunidad{" "}
         </span>
-        This Landing Page
+        nos recomienda
       </h2>
 
       <p className="text-xl text-muted-foreground pt-4 pb-8">

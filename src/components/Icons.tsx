@@ -23,6 +23,15 @@ export const LogoIcon = () => {
   );
 };
 
+export const ShieldIcon = () => {
+  return(
+    <span className="material-symbols-outlined">
+      shield_lock
+    </span>
+  )
+}
+
+
 export const MedalIcon = () => {
   return (
     <svg

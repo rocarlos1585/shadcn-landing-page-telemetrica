@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
@@ -22,52 +21,64 @@ interface PricingProps {
   description: string;
   buttonText: string;
   benefitList: string[];
+  modality:string,
 }
 
 const pricingList: PricingProps[] = [
   {
-    title: "Free",
+    title: "Venta",
     popular: 0,
-    price: 0,
+    price: 1750,
+    modality:'/Pago unico',
     description:
       "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Get Started",
+    buttonText: "Programa tu instalacion",
     benefitList: [
-      "1 Team member",
-      "2 GB Storage",
-      "Upto 4 pages",
-      "Community support",
-      "lorem ipsum dolor",
+      "Rastreo en tiempo real",
+      "Historial de ubicaciones hasta 6 meses",
+      "Programacion de alertas",
+      "Apagado de motor a distancia",
+      "Boton de emergencias",
+      "Bateria de respaldo",
     ],
   },
   {
-    title: "Premium",
+    title: "Renta y Paquete familiar",
     popular: 1,
-    price: 5,
+    price: 232,
+    modality:'/mes',
     description:
       "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Start Free Trial",
+    buttonText: "Programa tu instalacion",
     benefitList: [
-      "4 Team member",
-      "4 GB Storage",
-      "Upto 6 pages",
-      "Priority support",
-      "lorem ipsum dolor",
+      "Plataforma avanzada de rastreo",
+      "Plan de datos telcel mensual",
+      "Rastreo en tiempo real",
+      "Historial de ubicaciones hasta 6 meses",
+      "Delimitacion de Geo-Cercas",
+      "Soporte tecnico 24/7",
+      "Personalizacion de alertas"
     ],
   },
   {
-    title: "Enterprise",
+    title: "Paquete empresarial",
     popular: 0,
-    price: 40,
+    price: 360,
+    modality:'/mensuales por unidad',
     description:
       "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Contact US",
+    buttonText: "Programa tu instalacion",
     benefitList: [
-      "10 Team member",
-      "8 GB Storage",
-      "Upto 10 pages",
-      "Priority support",
-      "lorem ipsum dolor",
+      "Plataforma avanzada de rastreo",
+      "Plan de datos multiCarrier",
+      "Rastreo en tiempo real",
+      "Historial de ubicaciones de 1 a 5 años",
+      "Diseño y gestion de rutas",
+      "Delimitacion de Geo-Cercas",
+      "Personalizacion de alertas",
+      "Soporte Técnico permanente",
+      "Cuentas ilimitadas"
+
     ],
   },
 ];
@@ -79,16 +90,15 @@ export const Pricing = () => {
       className="container py-24 sm:py-32"
     >
       <h2 className="text-3xl md:text-4xl font-bold text-center">
-        Get
+        Paquetes
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
           {" "}
-          Unlimited{" "}
+          disponibles{" "}
         </span>
-        Access
+        para ti 
       </h2>
       <h3 className="text-xl text-center text-muted-foreground pt-4 pb-8">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-        reiciendis.
+        Elige el paquete que mas se adapte a tus necesidades.
       </h3>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {pricingList.map((pricing: PricingProps) => (
@@ -108,16 +118,16 @@ export const Pricing = () => {
                     variant="secondary"
                     className="text-sm text-primary"
                   >
-                    Most popular
+                    Mas Popular
                   </Badge>
                 ) : null}
               </CardTitle>
               <div>
-                <span className="text-3xl font-bold">${pricing.price}</span>
-                <span className="text-muted-foreground"> /month</span>
+                <span className="text-3xl font-bold">${pricing.price} mxn</span>
+                <span className="text-muted-foreground"> {pricing.modality}</span>
               </div>
 
-              <CardDescription>{pricing.description}</CardDescription>
+              {/* <CardDescription>{pricing.description}</CardDescription> */}
             </CardHeader>
 
             <CardContent>

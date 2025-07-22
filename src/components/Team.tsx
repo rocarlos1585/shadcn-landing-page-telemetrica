@@ -1,7 +1,6 @@
 import { buttonVariants } from "@/components/ui/button";
 import {
   Card,
-  CardContent,
   CardDescription,
   CardFooter,
   CardHeader,
@@ -24,8 +23,8 @@ interface SociaNetworkslProps {
 const teamList: TeamProps[] = [
   {
     imageUrl: "https://i.pravatar.cc/150?img=35",
-    name: "Emma Smith",
-    position: "Product Manager",
+    name: "Antonio Anguiano Apodaca",
+    position: "Director",
     socialNetworks: [
       {
         name: "Linkedin",
@@ -43,8 +42,8 @@ const teamList: TeamProps[] = [
   },
   {
     imageUrl: "https://i.pravatar.cc/150?img=60",
-    name: "John Doe",
-    position: "Tech Lead",
+    name: "Humberto Murillo",
+    position: "Director operativo",
     socialNetworks: [
       {
         name: "Linkedin",
@@ -62,8 +61,8 @@ const teamList: TeamProps[] = [
   },
   {
     imageUrl: "https://i.pravatar.cc/150?img=36",
-    name: "Ashley Ross",
-    position: "Frontend Developer",
+    name: "Edgar Murillo",
+    position: "Director de ventas",
     socialNetworks: [
       {
         name: "Linkedin",
@@ -78,8 +77,8 @@ const teamList: TeamProps[] = [
   },
   {
     imageUrl: "https://i.pravatar.cc/150?img=17",
-    name: "Bruce Rogers",
-    position: "Backend Developer",
+    name: "Roberto Lopez",
+    position: "Tecnico y desarrollador",
     socialNetworks: [
       {
         name: "Linkedin",
@@ -114,14 +113,13 @@ export const Team = () => {
     >
       <h2 className="text-3xl md:text-4xl font-bold">
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-          Our Dedicated{" "}
+          ¿Quienes{" "}
         </span>
-        Crew
+        somos?
       </h2>
 
       <p className="mt-4 mb-10 text-xl text-muted-foreground">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
-        dolor pariatur sit!
+        Conoce de primera mano quienes estan detras de la seguridad de tu patrimonio.
       </p>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 gap-y-10">
@@ -143,9 +141,9 @@ export const Team = () => {
                 </CardDescription>
               </CardHeader>
 
-              <CardContent className="text-center pb-2">
+              {/* <CardContent className="text-center pb-2">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-              </CardContent>
+              </CardContent> */}
 
               <CardFooter>
                 {socialNetworks.map(({ name, url }: SociaNetworkslProps) => (

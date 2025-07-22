@@ -1,6 +1,5 @@
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
-import { Badge } from "./ui/badge";
-import { Button, buttonVariants } from "@/components/ui/button";
+import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -9,9 +8,8 @@ import {
   CardTitle,
   CardFooter,
 } from "@/components/ui/card";
-import { Check, Linkedin } from "lucide-react";
+import { Check } from "lucide-react";
 import { LightBulbIcon } from "./Icons";
-import { GitHubLogoIcon } from "@radix-ui/react-icons";
 
 export const HeroCards = () => {
   return (
@@ -28,12 +26,12 @@ export const HeroCards = () => {
           </Avatar>
 
           <div className="flex flex-col">
-            <CardTitle className="text-lg">John Doe React</CardTitle>
-            <CardDescription>@john_doe</CardDescription>
+            <CardTitle className="text-lg">Jose Galindo Arriaga</CardTitle>
+            <CardDescription>@gal_joe</CardDescription>
           </div>
         </CardHeader>
 
-        <CardContent>This landing page is awesome!</CardContent>
+        <CardContent>Tengo 4 vehiculos que todo el dia estan en movimiento, gracias a telemetrica pude optimizar mejor el consumo de la gasolina</CardContent>
       </Card>
 
       {/* Team */}
@@ -44,9 +42,9 @@ export const HeroCards = () => {
             alt="user avatar"
             className="absolute grayscale-[0%] -top-12 rounded-full w-24 h-24 aspect-square object-cover"
           />
-          <CardTitle className="text-center">Leo Miranda</CardTitle>
+          <CardTitle className="text-center">Antonio Anguiano Apodaca</CardTitle>
           <CardDescription className="font-normal text-primary">
-            Frontend Developer
+            Director
           </CardDescription>
         </CardHeader>
 
@@ -57,7 +55,7 @@ export const HeroCards = () => {
           </p>
         </CardContent>
 
-        <CardFooter>
+        {/* <CardFooter>
           <div>
             <a
               rel="noreferrer noopener"
@@ -105,29 +103,29 @@ export const HeroCards = () => {
               <Linkedin size="20" />
             </a>
           </div>
-        </CardFooter>
+        </CardFooter> */}
       </Card>
 
       {/* Pricing */}
-      <Card className="absolute top-[150px] left-[50px] w-72  drop-shadow-xl shadow-black/10 dark:shadow-white/10">
+      <Card className="absolute top-[180px] left-[50px] w-72  drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader>
           <CardTitle className="flex item-center justify-between">
-            Free
-            <Badge
+            Paquete empresarial
+            {/* <Badge
               variant="secondary"
               className="text-sm text-primary"
             >
               Most popular
-            </Badge>
+            </Badge> */}
           </CardTitle>
           <div>
-            <span className="text-3xl font-bold">$0</span>
-            <span className="text-muted-foreground"> /month</span>
+            <span className="text-3xl font-bold">$360</span>
+            <span className="text-muted-foreground"> /mensuales por unidad</span>
           </div>
 
-          <CardDescription>
+          {/* <CardDescription>
             Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.
-          </CardDescription>
+          </CardDescription> */}
         </CardHeader>
 
         <CardContent>
@@ -138,7 +136,14 @@ export const HeroCards = () => {
 
         <CardFooter className="flex">
           <div className="space-y-4">
-            {["4 Team member", "4 GB Storage", "Upto 6 pages"].map(
+            {[      "Plataforma avanzada de rastreo",
+      "Plan de datos multiCarrier",
+      "Rastreo en tiempo real",
+      "Historial de ubicaciones de 1 a 5 años",
+      "Diseño y gestion de rutas",
+      "Delimitacion de Geo-Cercas",
+      "Personalizacion de alertas",
+    ].map(
               (benefit: string) => (
                 <span
                   key={benefit}
