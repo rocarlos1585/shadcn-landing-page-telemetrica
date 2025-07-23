@@ -7,6 +7,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import colors from "@/constants/colors";
 import { Check } from "lucide-react";
 
 enum PopularPlanType {
@@ -91,7 +92,7 @@ export const Pricing = () => {
     >
       <h2 className="text-3xl md:text-4xl font-bold text-center">
         Paquetes
-        <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
+        <span style={{color:colors.secondary}} className=" bg-clip-text">
           {" "}
           disponibles{" "}
         </span>
@@ -115,6 +116,7 @@ export const Pricing = () => {
                 {pricing.title}
                 {pricing.popular === PopularPlanType.YES ? (
                   <Badge
+                  style={{color:colors.secondary}}
                     variant="secondary"
                     className="text-sm text-primary"
                   >

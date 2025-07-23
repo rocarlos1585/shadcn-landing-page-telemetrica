@@ -1,5 +1,6 @@
 import { Button } from "./ui/button";
 import { HeroCards } from "./HeroCards";
+import colors from "@/constants/colors";
 
 export const Hero = () => {
   return (
@@ -14,7 +15,7 @@ export const Hero = () => {
           </h1>{" "}
           para{" "}
           <h2 className="inline">
-            <span className="inline bg-gradient-to-r from-[#61DAFB] via-[#1fc0f1] to-[#03a3d7] text-transparent bg-clip-text">
+            <span style={{color: colors.secondary}} className={`inline bg-gradient-to-r bg-clip-text`}>
               el rastreo de 
             </span>{" "}
             tus vehiculos
@@ -48,7 +49,7 @@ export const Hero = () => {
       </div>
 
       {/* Shadow effect */}
-      <div className="shadow"></div>
+      {/* <div className="shadow"></div> */}
     </section>
   );
 };

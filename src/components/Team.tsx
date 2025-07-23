@@ -1,13 +1,14 @@
-import { buttonVariants } from "@/components/ui/button";
-import {
+/* import { buttonVariants } from "@/components/ui/button";
+ */import {
   Card,
   CardDescription,
-  CardFooter,
-  CardHeader,
+/*   CardFooter,
+ */  CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Facebook, Instagram, Linkedin } from "lucide-react";
-
+import colors from "@/constants/colors";
+/* import { Facebook, Instagram, Linkedin } from "lucide-react";
+ */
 interface TeamProps {
   imageUrl: string;
   name: string;
@@ -93,7 +94,7 @@ const teamList: TeamProps[] = [
 ];
 
 export const Team = () => {
-  const socialIcon = (iconName: string) => {
+/*   const socialIcon = (iconName: string) => {
     switch (iconName) {
       case "Linkedin":
         return <Linkedin size="20" />;
@@ -104,7 +105,7 @@ export const Team = () => {
       case "Instagram":
         return <Instagram size="20" />;
     }
-  };
+  }; */
 
   return (
     <section
@@ -112,7 +113,7 @@ export const Team = () => {
       className="container py-24 sm:py-32"
     >
       <h2 className="text-3xl md:text-4xl font-bold">
-        <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
+        <span style={{color:colors.secondary}}className=" bg-clip-text">
           ¿Quienes{" "}
         </span>
         somos?
@@ -124,7 +125,7 @@ export const Team = () => {
 
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 gap-y-10">
         {teamList.map(
-          ({ imageUrl, name, position, socialNetworks }: TeamProps) => (
+          ({ imageUrl, name, position }: TeamProps) => (
             <Card
               key={name}
               className="bg-muted/50 relative mt-8 flex flex-col justify-center items-center"
@@ -136,7 +137,7 @@ export const Team = () => {
                   className="absolute -top-12 rounded-full w-24 h-24 aspect-square object-cover"
                 />
                 <CardTitle className="text-center">{name}</CardTitle>
-                <CardDescription className="text-primary">
+                <CardDescription style={{color:colors.secondary}} className="text-primary">
                   {position}
                 </CardDescription>
               </CardHeader>
@@ -145,7 +146,7 @@ export const Team = () => {
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
               </CardContent> */}
 
-              <CardFooter>
+{/*               <CardFooter>
                 {socialNetworks.map(({ name, url }: SociaNetworkslProps) => (
                   <div key={name}>
                     <a
@@ -162,7 +163,7 @@ export const Team = () => {
                     </a>
                   </div>
                 ))}
-              </CardFooter>
+              </CardFooter> */}
             </Card>
           )
         )}

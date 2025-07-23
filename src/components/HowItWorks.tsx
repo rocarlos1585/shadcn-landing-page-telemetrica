@@ -11,25 +11,25 @@ interface FeatureProps {
 
 const features: FeatureProps[] = [
   {
-    icon: <ShieldIcon color={colors.primary} size="70px" />,
+    icon: <ShieldIcon color={colors.secondary} size="70px" />,
     title: "Protege tu inversión",
     description:
       "Nuestros sistemas de rastreo GPS protegen tu inversión, ¿Preocupado por el robo de tu auto, motocicleta o la seguridad de tu flotilla? Descubre cómo podemos darte tranquilidad",
   },
   {
-    icon: <RouteIcon color={colors.primary} size="70px"  />,
+    icon: <RouteIcon color={colors.secondary} size="70px"  />,
     title: "Optimiza tus operaciones",
     description:
       "Con nuestros servicios puedes desde mejorar las rutas de entrega, monitorear los estilos de manejor hasta reducir costos, haz tu negocio mas eficiente.",
   },
   {
-    icon: <Network color={colors.primary} size="70px" />,
+    icon: <Network color={colors.secondary} size="70px" />,
     title: "Mantente siempre conectado",
     description:
       "Ya sea que desees saber la ubicacion de tu vehiculo personal o de toda tu flotilla, en TELEMETRICA te brindamos el control total en la palma de tu mano ",
   },
   {
-    icon: <AlarmClockCheckIcon color={colors.primary} size="70px" />,
+    icon: <AlarmClockCheckIcon color={colors.secondary} size="70px" />,
     title: "Cumplimiento y tranquilidad",
     description:
       "Tenemos garantia de cumplimiento y tranquilidad. Nuestros sistemas de rastreo GPS facilitan el cumplimiento de tus compromisos y al mismo tiempo, te brindan la tranquilidad de saber que tus activos están seguros.",
@@ -44,7 +44,7 @@ export const HowItWorks = () => {
     >
       <h2 className="text-3xl md:text-4xl font-bold ">
         En{" "}
-        <span style={{color:colors.primary}} className={`color:${colors.primary} bg-clip-text`}>
+        <span style={{color:colors.secondary}} className={`color:${colors.primary} bg-clip-text`}>
           TELEMETRICA{" "}
         </span>
         nos comprometemos a

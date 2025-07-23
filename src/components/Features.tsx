@@ -9,6 +9,7 @@ import {
 import lock from "../assets/lock.png";
 import profit from "../assets/profit.png";
 import roadmap from "../assets/roadmap.png";
+import colors from "@/constants/colors";
 
 
 
@@ -57,7 +58,7 @@ export const Features = () => {
     >
       <h2 className="text-3xl lg:text-4xl font-bold md:text-center">
         Soluciones en telemetria{" "}
-        <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
+        <span style={{color:colors.secondary}} className="bg-clip-text">
           para todos
         </span>
       </h2>

@@ -9,7 +9,8 @@ import {
   CardFooter,
 } from "@/components/ui/card";
 import { Check } from "lucide-react";
-import { LightBulbIcon } from "./Icons";
+/* import { LightBulbIcon } from "./Icons";
+ */import colors from "@/constants/colors";
 
 export const HeroCards = () => {
   return (
@@ -43,7 +44,7 @@ export const HeroCards = () => {
             className="absolute grayscale-[0%] -top-12 rounded-full w-24 h-24 aspect-square object-cover"
           />
           <CardTitle className="text-center">Antonio Anguiano Apodaca</CardTitle>
-          <CardDescription className="font-normal text-primary">
+          <CardDescription style={{color:colors.secondary}} className="font-normal text-primary">
             Director
           </CardDescription>
         </CardHeader>
@@ -129,7 +130,7 @@ export const HeroCards = () => {
         </CardHeader>
 
         <CardContent>
-          <Button className="w-full">Start Free Trial</Button>
+          <Button className="w-full">Programa tu instalación</Button>
         </CardContent>
 
         <hr className="w-4/5 m-auto mb-4" />
@@ -159,7 +160,7 @@ export const HeroCards = () => {
       </Card>
 
       {/* Service */}
-      <Card className="absolute w-[350px] -right-[10px] bottom-[35px]  drop-shadow-xl shadow-black/10 dark:shadow-white/10">
+{/*       <Card className="absolute w-[350px] -right-[10px] bottom-[35px]  drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader className="space-y-1 flex md:flex-row justify-start items-start gap-4">
           <div className="mt-1 bg-primary/20 p-1 rounded-2xl">
             <LightBulbIcon />
@@ -172,7 +173,7 @@ export const HeroCards = () => {
             </CardDescription>
           </div>
         </CardHeader>
-      </Card>
+      </Card> */}
     </div>
   );
 };

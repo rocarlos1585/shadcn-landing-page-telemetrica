@@ -1,3 +1,4 @@
+import colors from "@/constants/colors";
 import { Button } from "./ui/button";
 
 export const Cta = () => {
@@ -10,7 +11,7 @@ export const Cta = () => {
         <div className="lg:col-start-1">
           <h2 className="text-3xl md:text-4xl font-bold ">
             Solicita una
-            <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
+            <span style={{color:colors.secondary}} className=" bg-clip-text">
               {" "}
               DEMOSTRACIÓN{" "}
             </span>

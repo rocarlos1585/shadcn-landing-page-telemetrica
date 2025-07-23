@@ -4,6 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import colors from "@/constants/colors";
 
 interface FAQProps {
   question: string;
@@ -84,7 +85,7 @@ export const FAQ = () => {
     >
       <h2 className="text-3xl md:text-4xl font-bold mb-4">
         Preguntas{" "}
-        <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
+        <span style={{color:colors.secondary}} className=" bg-clip-text">
           Frecuentes
         </span>
       </h2>
@@ -114,6 +115,7 @@ export const FAQ = () => {
           rel="noreferrer noopener"
           href="#"
           className="text-primary transition-all border-primary hover:border-b-2"
+          style={{color:colors.secondary}}
         >
           Contactanos
         </a>

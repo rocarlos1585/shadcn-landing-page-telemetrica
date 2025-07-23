@@ -12,11 +12,13 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 
-import { GitHubLogoIcon } from "@radix-ui/react-icons";
-import { buttonVariants } from "./ui/button";
+/* import { GitHubLogoIcon } from "@radix-ui/react-icons";
+ */import { buttonVariants } from "./ui/button";
 import { Menu } from "lucide-react";
-import { ModeToggle } from "./mode-toggle";
-import { LogoIcon } from "./Icons";
+/* import { ModeToggle } from "./mode-toggle";
+ *//* import { LogoIcon } from "./Icons";
+ */
+import logoTelemetrica from '../assets/telemetricaLarge.svg'
 
 interface RouteProps {
   href: string;
@@ -26,19 +28,19 @@ interface RouteProps {
 const routeList: RouteProps[] = [
   {
     href: "#features",
-    label: "Features",
+    label: "Soluciones",
   },
   {
     href: "#testimonials",
-    label: "Testimonials",
+    label: "Testimonios",
   },
   {
     href: "#pricing",
-    label: "Pricing",
+    label: "Paquetes",
   },
   {
     href: "#faq",
-    label: "FAQ",
+    label: "Preguntas Frecuentes",
   },
 ];
 
@@ -47,21 +49,20 @@ export const Navbar = () => {
   return (
     <header className="sticky border-b-[1px] top-0 z-40 w-full bg-white dark:border-b-slate-700 dark:bg-background">
       <NavigationMenu className="mx-auto">
-        <NavigationMenuList className="container h-14 px-4 w-screen flex justify-between ">
+        <NavigationMenuList className="container h-20 px-4 w-screen flex justify-between ">
           <NavigationMenuItem className="font-bold flex">
             <a
               rel="noreferrer noopener"
               href="/"
               className="ml-2 font-bold text-xl flex"
             >
-              <LogoIcon />
-              ShadcnUI/React
+              <img style={{width:'100%', height:'100%'}} src={logoTelemetrica}/>
             </a>
           </NavigationMenuItem>
 
           {/* mobile */}
           <span className="flex md:hidden">
-            <ModeToggle />
+           {/*  <ModeToggle /> */}
 
             <Sheet
               open={isOpen}
@@ -94,17 +95,7 @@ export const Navbar = () => {
                       {label}
                     </a>
                   ))}
-                  <a
-                    rel="noreferrer noopener"
-                    href="https://github.com/leoMirandaa/shadcn-landing-page.git"
-                    target="_blank"
-                    className={`w-[110px] border ${buttonVariants({
-                      variant: "secondary",
-                    })}`}
-                  >
-                    <GitHubLogoIcon className="mr-2 w-5 h-5" />
-                    Github
-                  </a>
+
                 </nav>
               </SheetContent>
             </Sheet>
@@ -127,17 +118,7 @@ export const Navbar = () => {
           </nav>
 
           <div className="hidden md:flex gap-2">
-            <a
-              rel="noreferrer noopener"
-              href="https://github.com/leoMirandaa/shadcn-landing-page.git"
-              target="_blank"
-              className={`border ${buttonVariants({ variant: "secondary" })}`}
-            >
-              <GitHubLogoIcon className="mr-2 w-5 h-5" />
-              Github
-            </a>
-
-            <ModeToggle />
+            {/* <ModeToggle /> */}
           </div>
         </NavigationMenuList>
       </NavigationMenu>

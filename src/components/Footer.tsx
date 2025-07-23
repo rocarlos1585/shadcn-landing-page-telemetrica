@@ -1,4 +1,5 @@
-import { LogoIcon } from "./Icons";
+import logoTelemetrica from '../assets/telemetricaLarge.svg'
+
 
 export const Footer = () => {
   return (
@@ -6,18 +7,21 @@ export const Footer = () => {
       <hr className="w-11/12 mx-auto" />
 
       <section className="container py-20 grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-x-12 gap-y-8">
+
+
         <div className="col-span-full xl:col-span-2">
           <a
             rel="noreferrer noopener"
             href="/"
             className="font-bold text-xl flex"
           >
-            <LogoIcon />
-            ShadcnUI/React
+            <img style={{width:'70%', height:'100%'}} src={logoTelemetrica}/>
           </a>
         </div>
 
-        <div className="flex flex-col gap-2">
+
+
+        {/* <div className="flex flex-col gap-2">
           <h3 className="font-bold text-lg">Follow US</h3>
           <div>
             <a
@@ -161,7 +165,7 @@ export const Footer = () => {
           >
             Leo Miranda
           </a>
-        </h3>
+        </h3> */}
       </section>
     </footer>
   );

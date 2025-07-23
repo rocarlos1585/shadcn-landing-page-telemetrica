@@ -1,8 +1,8 @@
 // src/constants/colors.ts
 
 const colors: { [key: string]: string } = {
-  primary: 'green',
-  secondary: '#6C757D',
+  primary: '#ED1C24',
+  secondary: '#0071bc',
   success: '#28A745',
   danger: '#DC3545',
   warning: '#FFC107',
